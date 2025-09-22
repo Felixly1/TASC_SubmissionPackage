@@ -1,0 +1,19 @@
+
+Write a brief explanation (1–2 paragraphs) describing:
+
+
+
+What type of data you chose to send?
+How this type of data would contribute to a robotics system (e.g., navigation, control, sensing)?
+
+==============================================================================================================
+
+For the project, I chose to utilize the turtle topics/nodes for the submission. This is because after watching 
+the YouTube playlist on ROS2, the examples he gave using turtle had a lot of potential, and I felt I could build 
+something cool from there. The data being sent uses the /turtle1/pose topic to retrieve information like x,y, and 
+linear/angular velocity from the turtle. Additionally, I added a distance from center variable to track approximately 
+how far the turtle is from the midpoint using simple Pythagorean. 
+
+This data would contribute to a robotics system by informing users of the robot's position relative to a stage/setting and other entities. 
+Knowing the angular and linear velocity could also tell you how the robot is gonna move and lets you predict its path. 
+The distance from center could also be used to fetch distances from relative entities like known objects or obstructions. 
